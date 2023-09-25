@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\StaticImages\649931-removebg-preview.png" />
+    <None Remove="Assets\SvgImages\headspeaker.jpg" />
+    <None Remove="Assets\SvgImages\images %281%29.jpg" />
+    <None Remove="Assets\SvgImages\laptop.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+    <Folder Include="Securities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Notification.Wpf" Version="7.0.0.2" />
+    <PackageReference Include="RestClient" Version="3.1024.23771" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eleshop.Dtos\Eleshop.Dtos.csproj" />
+    <ProjectReference Include="..\Eleshop.Integrated\Eleshop.Integrated.csproj" />
+    <ProjectReference Include="..\Eleshop.ViewModels\Eleshop.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\StaticImages\649931-removebg-preview.png" />
+    <Resource Include="Assets\SvgImages\headspeaker.jpg" />
+    <Resource Include="Assets\SvgImages\images (1).jpg" />
+    <Resource Include="Assets\SvgImages\laptop.jpg" />
+  </ItemGroup>
+
+</Project>
